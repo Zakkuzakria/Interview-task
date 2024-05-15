@@ -1,0 +1,176 @@
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #021226, #57b6cb);
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.post-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.post-item:hover {
+  transform: translateY(-5px);
+}
+
+.post-item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.post-item p {
+  font-size: 16px;
+  text-align: left;
+}
+
+.read-more {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #0056b3;
+}
+
+.comment {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.go-back {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.go-back:hover {
+  background-color: #0056b3;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+
+.light-mode .post-item {
+  background-color: #fff;
+  color: #333333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .read-more {
+  background-color: #007bff;
+}
+
+.light-mode .read-more:hover {
+  background-color: #0056b3;
+}
+
+.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+
+.dark-mode .post-item {
+  background-color: #333333;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .read-more {
+  background-color: #0056b3;
+}
+
+.dark-mode .read-more:hover {
+  background-color: #007bff;
+}
+
+.search-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+} 
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+} 
+
+.search-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.page-link:hover {
+  background-color: #0056b3;
+}
+
+.page-item.disabled .page-link {
+  pointer-events: none;
+  opacity: 0.6;
+  background-color: #ddd;
+  color: #666;
+}
+
